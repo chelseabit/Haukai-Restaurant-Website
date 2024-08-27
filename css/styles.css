@@ -1,0 +1,516 @@
+/*------------- Global Styles -------------*/
+
+/* Reset margin for the body element and set a default font */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for images */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*------------- Header Styles -------------*/
+
+/* Styling for the header section */
+header {
+  padding: 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Styling for the logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+/* Styling for the heading inside the logo container */
+.logo h1 {
+  margin: 0;
+}
+
+/* Styling for the mobile header */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Styling for the word Haukai in the logo */
+#haukai-text {
+  color: #40565a;
+}
+
+/* Styling for the word Restaurant in the logo */
+#restaurant-text {
+  color: #776047;
+}
+
+/*------------- Navigation Styles -------------*/
+
+/* Styling for the navigation bar */
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for anchor links inside the navigation bar */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Styling for anchor links hover inside the navigation bar */
+nav a:hover {
+  color: black;
+}
+
+/* Styling for the hamburger menu (for mobile devices) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Styling for each line in the hamburger menu */
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Styling for the Staff Portal in the navigation menu */
+#staff-portal {
+  color: gray;
+  margin-top: -15px;
+  margin-left: 60px;
+}
+
+/*-------------------- Multi-Page Styles --------------------*/
+
+/* Adds a border around the element */
+.border {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for a flexible row */
+.flexible-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 70px;
+}
+
+/*Styling for img box in a flexible row */
+.flexible-row-box-img {
+  margin: 10px;
+  padding: 25px;
+  flex: 0 1 20%;
+}
+
+/*Styling for text box in a flexible row */
+.flexible-row-box-text {
+  margin: 10px;
+  text-align: left;
+  padding: 25px;
+  flex: 0 1 80%;
+}
+
+/* Styling for rows with headers */
+.flexible-row-header {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Styling for iframes within flexible rows */
+.flexible-row iframe {
+  max-width: 100%;
+}
+
+/*Styling for items in a flexible row */
+.flexible-row-item {
+  margin: 10px;
+  text-align: left;
+  padding: 25px 40px 25px;
+}
+
+/* Changes alignment in a flexible row */
+.flexible-row-start {
+  align-self: flex-start;
+}
+
+/*-------------------- Home Page Specific Styles --------------------*/
+
+/* Styling for the featured menu items container */
+.featured-menu-container {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  flex-wrap: wrap;
+}
+
+/* Styling for each item box in the featured menu */
+.featured-menu-item-box {
+  flex: 1;
+  margin: 10px;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Styling for the description in the featured menu items */
+.featured-menu-item-box-description {
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* Styling for the images in the featured menu items */
+.featured-menu-item-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styling for the intro row on the home page */
+.intro-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 70px;
+}
+
+/* Styling for the featured menu section */
+#featured-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+/*-------------------- Menu Page Specific Styles --------------------*/
+
+/* Styling for the batch number in the menu */
+.batch-number {
+  font-size: 18px;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* Styling for the description in the menu item */
+.menu-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* Styling for menu image description */
+.menu-image-description {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styling for each item in the menu */
+.menu-item {
+  background-color: #fff;
+  padding: 5px 20px 5px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the menu list */
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for the titltes in the menu list */
+.menu-list-title {
+  padding: 5px 20px 5px;
+}
+
+/* Styling for the price in the menu item */
+.menu-price {
+  font-size: 18px;
+  color: #666;
+  margin-left: 5px;
+}
+
+/* Styling for wine title batch in the menu */
+.menu-title-batch {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+/* Styling for the title and price in the menu item */
+.menu-title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+/* Styling for the title in the menu item */
+.menu-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  flex: 1;
+}
+
+/*-------------------- Footer Styles --------------------*/
+
+/* Styling for the footer section */
+footer {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  font-size: small;
+  margin-top: auto;
+}
+
+/* Styling for the address section in the footer */
+footer address {
+  text-align: left;
+}
+
+/* Styling for paragraphs inside the address */
+footer address p {
+  margin: 3px;
+}
+
+/*-------------------- Media Queries --------------------*/
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+
+  /*--------- Menu Page Styling ---------*/
+
+  /* Styling for wine batch number */
+  .batch-number {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  /* Styling for wine menu title batch */
+  .menu-title-batch {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /*--------- Footer Styling ---------*/
+
+  /* Styling for the footer section */
+  footer {
+    justify-content: space-around;
+  }
+
+}
+
+/* Media query for screens with a maximum width of 645px */
+@media (max-width: 645px) {
+
+  /*--------- Home Page Styling ---------*/
+
+  /*Styling for the intro row */
+  .intro-row {
+    margin: 5px 10px;
+  }
+
+}
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+
+  /*--------- Home Page Styling ---------*/
+
+  /* Styling for featured menu containers */
+  .featured-menu-container {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0;
+  }
+
+  /* Styling for featured menu item boxes */
+  .featured-menu-item-box {
+    width: 100%;
+    max-width: 500px;
+  }
+
+}
+
+/* Media query for screens with a maximum width of 800px */
+@media (max-width: 800px) {
+
+  /*--------- Multi Page Styles ---------*/
+
+  /* Styling for flexible row items */
+  .flexible-row-item {
+    margin: 10px;
+    text-align: left;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+
+  /* Styling for flexible rows */
+  .flexible-row {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  /*--------- Home Page Styling --------*/
+
+  /* Styling for featured menu section */
+  #featured-menu {
+    margin: 0;
+  }
+}
+
+/* Media query for screens with a maximum width of 800px */
+@media (max-width: 880px) {
+
+  /*--------- Home Page Styling --------*/
+
+  /* Styling for intro row */
+  .intro-row {
+    flex-direction: column;
+  }
+
+}
+
+/* Media query for screens with a maximum width of 964px */
+@media (max-width: 964px) {
+
+  /*------------- Reservation Page Specific Style -------------*/
+
+  /* Styling specific to the flexible row on the reservation page */
+  .reservations-flex-column .flexible-row {
+    flex-direction: column;
+  }
+
+}
+
+/* Media query for screens with a maximum width of 1250px */
+@media (max-width: 1250px) {
+
+  /*------------- Header Styling -------------*/
+
+  /* Styling for header section on medium screens */
+  header {
+    flex-direction: column;
+  }
+
+  /* Styling for mobile header */
+  .mobile-header {
+    width: 100%;
+  }
+
+  /* Hide navigation menu on screens smaller */
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #f8f8f8;
+  }
+
+  /* Display the navigation menu when active */
+  nav.active {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styling for links inside the active navigation menu */
+  nav.active a {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Display the hamburger menu in mobile view */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Remove top margin for Staff Portal in mobile view */
+  #staff-portal {
+    margin: 0;
+  }
+}
+
+/* Media query for screens with a maximum width of 1280px */
+@media (max-width: 1280px) {
+
+  /*--------- Multi Page Styles ---------*/
+
+  /* Changes alignment in a flexible row */
+  .flexible-row-start {
+    align-items: center;
+    align-self: auto;
+  }
+
+  /* Styling for the flexible row */
+  .flexible-row {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 1441px) {
+
+  /*--------- Multi Page Styles ---------*/
+
+  /*Styling for img box in a flexible row */
+  .flexible-row-box-img {
+    flex: 0 1 30%;
+  }
+
+  /*Styling for text box in a flexible row */
+  .flexible-row-box-text {
+    flex: 0 1 70%;
+  }
+
+}
+
+
+/* Media query for screens larger than 800px */
+@media (min-width: 601px) {
+
+  /*--------- Footer Styling ---------*/
+
+  /* Styling for address tag in footer */
+  footer address {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+  <!--
+    Specifies the character encoding for the HTML document
+    and sets the viewport for responsive design.
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Haukai Restaurant, located in the beautiful Bay of Islands.
+    Enjoy a unique dining experience with a fusion of M&#257;ori and P&#257;keha cuisine. Explore our diverse menu, make 
+    a reservation, and learn more about our culture and offerings, Open Wednesday to Sunday evenings.">
+  <title>Haukai Restaurant</title>
+
+  <!-- A link to our main css stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!--
+    Main header of the page, includes the logo, site title,
+    and navigation elements. This header is consistent across all pages.
+    -->
+  <header>
+    <!-- 
+      Container for the mobile version of the header,
+      including the logo and hamburger menu.  
+      -->
+    <div class="mobile-header">
+      <!-- 
+        Restaurant logo and name. The logo is an image followed
+        by the restaurant name styled as Haukai Restaurant.
+        -->
+      <div class="logo">
+        <img src="images/logo.png" alt="Haukai Restaurant Logo">
+        <h1>
+          <span id="haukai-text">HAUKAI</span><br>
+          <span id="restaurant-text">RESTAURANT</span>
+        </h1>
+      </div>
+
+      <!-- 
+        Hamburger menu icon for mobile devices,
+        toggles the display of the navigation menu.
+        -->
+      <div role="button" aria-label="Toggle Menu" tabindex="0" class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- 
+      Navigation menu for the website. this navigation is used across
+      all pages and contains links to the main sections of the site.
+      -->
+      <nav id="navbar" aria-label="Main Navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="menu.html" aria-label="Menus">Menus</a>
+        <a href="hours.html" aria-label="Our Hours">Our Hours</a>
+        <a href="reservations.html" aria-label="Reservations">Reservations</a>
+        <a href="#" aria-label="About Us">About Us</a>
+        <a href="contact.html" aria-label="Contact Us">Contact Us</a>
+        <a href="#" aria-label="Culture and Kai">Culture and Kai</a>
+        <a href="#" aria-label="Gift Vouchers">Gift Vouchers</a>
+        <a id="staff-portal" href="#" aria-label="Staff Portal">Staff Portal</a>
+      </nav>
+    </header>
+
+  <!--
+    Main content area of the page.
+    -->
+  <main>
+    <!-- 
+      Introduction section of the homepage. This section introduces
+      visitors to Haukai Restaurant with a welcome message and a brief description. 
+      -->
+    <section class="flexible-row border">
+      <div class="intro-row">
+        <div class="flexible-row-box-text"> <!-- (flexible-row-override) Copy/Paste into class area to remove centering-->
+          <h2 id="intro-section">Welcome to Haukai Restaurant</h2>
+          <p>
+            At Haukai Restaurant, located in the stunning Bay of Islands, we
+            offer delicious M&#257;ori kai for both locals and tourists. We
+            are open Wednesday to Sunday evenings. Our menu features a mix of
+            M&#257;ori and P&#257;keha kai options and drinks.
+          </p>
+        </div>
+        <div class="flexible-row-box-img">
+          <img src="images/inside_haukai.jpg" alt="Inside Haukai Restaurant">
+        </div>
+      </div>
+    </section>
+    <!-- Intro Section End -->
+
+    <!-- 
+      Featured menu items section. This section highlights
+      popular dishes offered by the restaurant.
+      -->
+
+      <section id="featured-menu">
+        <h2>Our Menu</h2>
+        <!--
+        Container for the featured menu items. Each item includes 
+        an image, title, and description.
+        -->
+        <div class="featured-menu-container">
+          
+          <!-- Featured Menu Item 1 Paua Fritters -->
+          <div class="featured-menu-item-box">
+            <img
+              src="images/paua_fritters.jpg"
+              alt="Paua Fritters"
+            >
+            <h3 aria-label="Paua Fritters">Paua Fritters</h3>
+            <p>
+              Finely diced pieces of paua, served with a side salad and horopito
+              dressing.
+            </p>
+          </div>
+          <!-- Featured Menu Item 1 End -->
+
+        <!-- Featured Menu Item 2 Poached Salmon -->
+        <div class="featured-menu-item-box">
+          <img src="images/poached_salmon.jpg" alt="Poached Salmon">
+          <h3 aria-label="Poached Salmon">Poached Salmon</h3>
+          <p>
+            Salmon poached in an orange and pistachio glaze, served with
+            rewena bread.
+          </p>
+        </div>
+        <!-- Featured Menu Item 2 End -->
+
+        <!-- Featured Menu Item 3 Rewena Bread -->
+        <div class="featured-menu-item-box">
+          <img src="images/rewena_bread.jpg" alt="Rewena Bread">
+          <h3 aria-label="Rewena Bread">Rewena Bread</h3>
+          <p>
+            A traditional M&#257;ori delicacy crafted from fermented potatoes.
+          </p>
+        </div>
+        <!-- Featured Menu Item 3 End -->
+      </div>
+    </section>
+    <!-- Featured Menu Section End -->
+  </main>
+  <!-- Main Section End-->
+
+  <!-- 
+    Footer of the page, includes the restaurant's address, 
+    contact information, and copyright notice.
+    -->
+  <footer>
+    <!-- Haukai Restaurant's address -->
+    <address>
+      <!-- Address Details -->
+      Address:
+      <p>Haukai Restaurant</p>
+      <p>1 Island Street</p>
+      <p>Kerikeri</p>
+      <p>Bay of Islands</p>
+
+      <!-- Phone Number with link for dailing-->
+      <p>
+        Phone:
+        <a href="tel:+64094014019"> 09 401 4019</a>
+      </p>
+    </address>
+
+    <!-- Copyright Notice Information -->
+    <p>&copy; 2024 Haukai Restaurant</p>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Link to the JavaScript file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

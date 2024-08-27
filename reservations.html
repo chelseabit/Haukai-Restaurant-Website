@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+  <!--
+    Specifies the character encoding for the HTML document
+    and sets the viewport for responsive design.
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Haukai Restaurant, located in the beautiful Bay of Islands.
+    Enjoy a unique dining experience with a fusion of M&#257;ori and P&#257;keha cuisine. Explore our diverse menu, make 
+    a reservation, and learn more about our culture and offerings, Open Wednesday to Sunday evenings.">
+  <title>Haukai Restaurant</title>
+
+  <!-- A link to our main css stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!--
+    Main header of the page, includes the logo, site title,
+    and navigation elements. This header is consistent across all pages.
+    -->
+  <header>
+    <!-- 
+      Container for the mobile version of the header,
+      including the logo and hamburger menu.  
+      -->
+    <div class="mobile-header">
+      <!-- 
+        Restaurant logo and name. The logo is an image followed
+        by the restaurant name styled as Haukai Restaurant.
+        -->
+      <div class="logo">
+        <img src="images/logo.png" alt="Haukai Restaurant Logo">
+        <h1>
+          <span id="haukai-text">HAUKAI</span><br>
+          <span id="restaurant-text">RESTAURANT</span>
+        </h1>
+      </div>
+
+      <!-- 
+        Hamburger menu icon for mobile devices,
+        toggles the display of the navigation menu.
+        -->
+      <div role="button" aria-label="Toggle Menu" tabindex="0" class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- 
+      Navigation menu for the website. this navigation is used across
+      all pages and contains links to the main sections of the site.
+      -->
+    <nav id="navbar" aria-label="Main Navigation">
+      <a href="index.html" aria-label="Home">Home</a>
+      <a href="menu.html" aria-label="Menus">Menus</a>
+      <a href="hours.html" aria-label="Our Hours">Our Hours</a>
+      <a href="reservations.html" aria-label="Reservations">Reservations</a>
+      <a href="#" aria-label="About Us">About Us</a>
+      <a href="contact.html" aria-label="Contact Us">Contact Us</a>
+      <a href="#" aria-label="Culture and Kai">Culture and Kai</a>
+      <a href="#" aria-label="Gift Vouchers">Gift Vouchers</a>
+      <a id="staff-portal" href="#" aria-label="Staff Portal">Staff Portal</a>
+    </nav>
+  </header>
+
+  <!--
+    Main content area of the page.
+    -->
+  <main>
+    <!-- Here is the page's introduction section -->
+    <section class="flexible-row reservations-flex-column border">
+      <div class="flexible-row-item flexible-row-box-text">
+        <h2>Reservation</h2>
+        <p>
+          Welcome to our restaurant's reservation page, where you can secure
+          your table for an unforgettable dining experience. Choose your
+          preferred date and time to join us for a great evening.
+        </p>
+
+        <!-- Here is Haukai Restaurant's operating hours -->
+        <h2>Our Hours</h2>
+        <ul>
+          <li>Sunday: Evenings</li>
+          <li>Monday: Closed</li>
+          <li>Tuesday: Closed</li>
+          <li>Wednesday: Evenings</li>
+          <li>Thursday: Evenings</li>
+          <li>Friday: Evenings</li>
+          <li>Saturday: Evenings</li>
+        </ul>
+      </div>
+      <div class="flexible-row-item flexible-row-box-img">
+        <img src="images/outside_haukai.jpg" alt="Outside Haukai Restaurant">
+      </div>
+    </section>
+
+    <div class="flexible-row reservations-flex-column border">
+      <!-- Here is the page's reservation form section -->
+      <section class="flexible-row-item">
+        <!-- Here is the embed Google reservation form for Haukai Restaurant -->
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScdSGsxpNsqkDJKmdlJkGjJ0YF3Rqi1xO6sQFYB-aj-1DYtTA/viewform?embedded=true"
+          width="640" height="1438" frameborder="0" marginheight="0" marginwidth="0"
+          title="Reservation Form">Loading…</iframe>
+      </section>
+
+      <!-- Here is the page's phone & address section -->
+      <section class="flexible-row-item flexible-row-start">
+        <!-- Here is the embed Google map of Haukai Restaurant -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.150017061052!2d174.9288116766569!3d-41.21850117132186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afd565468ca9%3A0x631714cab5700121!2sOpen%20Polytechnic!5e0!3m2!1sen!2snz!4v1721510740310!5m2!1sen!2snz"
+          width="450" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Map"></iframe>
+
+        <h2>Phone & Address</h2>
+        <address>
+          Address:
+          <br>1 Island Street <br>Kerikeri <br>Bay of Islands
+          <br>Phone: <a href="tel:+64094014019">09 401 4019</a>
+        </address>
+      </section>
+    </div>
+  </main>
+
+  <!-- 
+    Footer of the page, includes the restaurant's address, 
+    contact information, and copyright notice.
+    -->
+  <footer>
+    <!-- Haukai Restaurant's address -->
+    <address>
+      <!-- Address Details -->
+      Address:
+      <p>Haukai Restaurant</p>
+      <p>1 Island Street</p>
+      <p>Kerikeri</p>
+      <p>Bay of Islands</p>
+
+      <!-- Phone Number with link for dailing-->
+      <p>
+        Phone:
+        <a href="tel:+64094014019"> 09 401 4019</a>
+      </p>
+    </address>
+
+    <!-- Copyright Notice Information -->
+    <p>&copy; 2024 Haukai Restaurant</p>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- A link to our main javascript file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

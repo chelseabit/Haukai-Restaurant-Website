@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+  <head>
+    <!--
+    Specifies the character encoding for the HTML document
+    and sets the viewport for responsive design.
+    -->
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Welcome to Haukai Restaurant, located in the beautiful Bay of Islands.
+    Enjoy a unique dining experience with a fusion of M&#257;ori and P&#257;keha cuisine. Explore our diverse menu, make 
+    a reservation, and learn more about our culture and offerings, Open Wednesday to Sunday evenings.">
+    <title>Haukai Restaurant</title>
+
+    <!-- A link to our main css stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" >
+  </head>
+
+  <body>
+    <!--
+    Main header of the page, includes the logo, site title,
+    and navigation elements. This header is consistent across all pages.
+    -->
+    <header>
+      <!-- 
+      Container for the mobile version of the header,
+      including the logo and hamburger menu.  
+      -->
+      <div class="mobile-header">
+        <!-- 
+        Restaurant logo and name. The logo is an image followed
+        by the restaurant name styled as Haukai Restaurant.
+        -->
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="Haukai Restaurant Logo"
+            aria-label="Haukai Restaurant Logo"
+          >
+          <h1>
+            <span id="haukai-text">HAUKAI</span><br>
+            <span id="restaurant-text">RESTAURANT</span>
+          </h1>
+        </div>
+
+        <!-- 
+        Hamburger menu icon for mobile devices,
+        toggles the display of the navigation menu.
+        -->
+        <div
+          role="button"
+          aria-label="Toggle Menu"
+          tabindex="0"
+          class="hamburger"
+          onclick="toggleMenu()"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <!-- 
+      Navigation menu for the website. this navigation is used across
+      all pages and contains links to the main sections of the site.
+      -->
+      <nav id="navbar" aria-label="Main Navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="menu.html" aria-label="Menus">Menus</a>
+        <a href="hours.html" aria-label="Our Hours">Our Hours</a>
+        <a href="reservations.html" aria-label="Reservations">Reservations</a>
+        <a href="#" aria-label="About Us">About Us</a>
+        <a href="contact.html" aria-label="Contact Us">Contact Us</a>
+        <a href="#" aria-label="Culture and Kai">Culture and Kai</a>
+        <a href="#" aria-label="Gift Vouchers">Gift Vouchers</a>
+        <a id="staff-portal" href="#" aria-label="Staff Portal">Staff Portal</a>
+      </nav>
+    </header>
+
+    <!--
+    Main content area of the page.
+    -->
+    <main>
+      <!-- Menu header section -->
+      <section>
+        <div class="flexible-row-header">
+          <h2>Our Menu</h2>
+          <p>
+            Here are our
+            <a href="#food-menu" aria-label="Jump to Food Section">food</a> and
+            <a href="#beverage-menu" aria-label="Jump to Beverage Section"
+              >beverage</a
+            >
+            menus below.
+          </p>
+          <h3>Food Menu</h3>
+        </div>
+      </section>
+
+      <!-- Food Menu Section Start -->
+
+        <!-- Appetizers section-->
+        <section class="flexible-row border" aria-labelledby="appetizers-title">
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="appetizers-title">Appetizers</h4>
+            <ul class="menu-list" aria-label="List of Appetizers">
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Rewena Bread</strong>
+                  <span class="menu-price">$10</span>
+                </div>
+                <p class="menu-description">Traditional Maori bread.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Paua Fritter</strong>
+                  <span class="menu-price">$16</span>
+                </div>
+                <p class="menu-description">
+                  Finely diced pieces of paua, served with a side salad and
+                  horopito dressing.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Raw Fish</strong>
+                  <span class="menu-price">$20</span>
+                </div>
+                <p class="menu-description">
+                  Dried snapper fish marinated in coconut cream, served with
+                  tomatoes and spring onions.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Poached Salmon</strong>
+                  <span class="menu-price">$22</span>
+                </div>
+                <p class="menu-description">
+                  Salmon poached in an orange and pistachio glaze, served with
+                  rewena bread.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Seafood Basket</strong>
+                  <span class="menu-price">$25</span>
+                </div>
+                <p class="menu-description">
+                  Crumbed mussels, salt and pepper squid, crumbed hoki bites and
+                  garlic prawns.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/rewena_bread.jpg" alt="Rewena Bread" >
+              <figcaption class="menu-image-description">
+                Rewena Bread
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- Appetizers section end-->
+
+        <!-- Mains section-->
+        <section class="flexible-row border" aria-labelledby="mains-title">
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="mains-title">Mains</h4>
+            <ul class="menu-list" aria-label="List of Main Dishes">
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Fish of the Day</strong>
+                  <span class="menu-price">$25</span>
+                </div>
+                <p class="menu-description">
+                  Beer-battered fish and kumara fries, served with a side salad
+                  and homemade tartare
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Mussels and Scallops</strong>
+                  <span class="menu-price">$25</span>
+                </div>
+                <p class="menu-description">
+                  Steamed mussel & scallop mousse, honey and soy broth.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Seafood Chowder</strong>
+                  <span class="menu-price">$30</span>
+                </div>
+                <p class="menu-description">
+                  Creamy chowder filled with tarakihi, prawn, hoki, scallops and
+                  mussels, served with flatbread.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Pork Belly</strong>
+                  <span class="menu-price">$30</span>
+                </div>
+                <p class="menu-description">
+                  Slow-cooked pork belly served on a bed of apple slaw with
+                  roasted kumara and crispy noodles.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Lamb Steak</strong>
+                  <span class="menu-price">$33</span>
+                </div>
+                <p class="menu-description">
+                  New Zealand lamb coated in a kawakawa crumb, served with
+                  Dijon-mustard-glazed carrots, roasted butternut squash and
+                  mushroom jus.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Venison</strong>
+                  <span class="menu-price">$33</span>
+                </div>
+                <p class="menu-description">
+                  Venison crusted with Horopito, served with glazed plums,
+                  cabbage salad and red wine jus.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/fish.jpg" alt="Fish of the Day" >
+              <figcaption class="menu-image-description">
+                Fish of the Day
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- Mains section end-->
+
+        <!-- Dessert section-->
+        <section class="flexible-row border" aria-labelledby="dessert-title">
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="dessert-title">Dessert</h4>
+            <ul class="menu-list" aria-label="List of Desserts">
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Kapiti Ice Cream</strong>
+                  <span class="menu-price">$10</span>
+                </div>
+                <p class="menu-description">Check for daily specials.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Steamed Pudding</strong>
+                  <span class="menu-price">$12</span>
+                </div>
+                <p class="menu-description">
+                  Golden-syrup-flavoured steamed pudding, served with vanilla
+                  ice cream.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Mini Pavlova</strong>
+                  <span class="menu-price">$16</span>
+                </div>
+                <p class="menu-description">
+                  Mini pavlova, served with kawakawa and lemon-infused cream and
+                  fresh fruit.
+                </p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Banoffee Pie</strong>
+                  <span class="menu-price">$16</span>
+                </div>
+                <p class="menu-description">
+                  Toffee, fresh bananas and fresh cream.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/icecream.jpg" alt="Kapiti Ice Cream" >
+              <figcaption class="menu-image-description">
+                Kapiti Ice Cream
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- Dessert section end-->
+         
+      <!-- Food Menu Section End -->
+
+      <!-- Beverages Menu section -->
+      <section id="beverage-menu">
+        <div class="flexible-row-header">
+          <h3>Beverages</h3>
+        </div>
+
+        <!-- Red Wine section-->
+        <section class="flexible-row border" aria-labelledby="red-wine-title">
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="red-wine-title">Red Wine <span>B/G</span></h4>
+            <ul class="menu-list" aria-label="List of Red Wines">
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Terrace Edge Pinot Noir, 2012, Wairarapa</strong
+                  >
+                  <span class="batch-number">53/13</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Altitude Pinot Noir, 2010, Marlborough</strong
+                  >
+                  <span class="batch-number">64/15</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Greystone Pinot Noir, 2012, Wairarapa</strong
+                  >
+                  <span class="batch-number">73/17</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Terrace Edge Syrah, 2012, Wairarapa</strong
+                  >
+                  <span class="batch-number">53/13</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Altitude Syrah, 2010, Marlborough</strong
+                  >
+                  <span class="batch-number">64/15</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Greystone Syrah, 2012, Wairarapa</strong
+                  >
+                  <span class="batch-number">73/17</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Pegasus Bay Merlot, 2013, Waipara</strong
+                  >
+                  <span class="batch-number">65/14</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Pegasus Bay Pinot Noir, 2013, Waipara</strong
+                  >
+                  <span class="batch-number">110</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/red_wine.jpg" alt="Terrace Edge Pinot Noir" >
+              <figcaption class="menu-image-description">
+                Terrace Edge Pinot Noir
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- Red Wine section end-->
+
+        <!-- White Wine section-->
+        <section class="flexible-row border" aria-labelledby="white-wine-title">
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="white-wine-title">White Wine <span>B/G</span></h4>
+            <ul class="menu-list" aria-label="List of White Wines">
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Spade Oak Pinot Gris, 2011, Gisborne</strong
+                  >
+                  <span class="batch-number">40/10</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Maude Pinot Gris, 2017, Otago</strong
+                  >
+                  <span class="batch-number">49.50/11</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Charles Wiffen Chardonnay, 2013, Otago</strong
+                  >
+                  <span class="batch-number">48/11</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Amisfield, Riesling, 2016, Otago</strong
+                  >
+                  <span class="batch-number">53/12</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Lamont Riesling, 2010, Otago</strong
+                  >
+                  <span class="batch-number">57/13</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Elephant Hill Viognier, 2013, Hawke's Bay</strong
+                  >
+                  <span class="batch-number">55/12</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Folium Sauvignon Blanc, 2011, Marlborough</strong
+                  >
+                  <span class="batch-number">52/11</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-batch">
+                  <strong class="menu-title"
+                    >Billecart-Salmon Brut Reserve, France</strong
+                  >
+                  <span class="batch-number">120</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/white_wine.jpg" alt="Terrace Edge Pinot Noir" >
+              <figcaption class="menu-image-description">
+                Spade Oak Pinot Gris
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- White Wine section end-->
+
+        <!-- Beer and Cidar section-->
+        <section
+          class="flexible-row border"
+          aria-labelledby="beerandcider-title"
+        >
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="beerandcider-title">Beer and Cider</h4>
+            <ul class="menu-list" aria-label="List of Beer and Cider">
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Garage project range</strong>
+                  <span class="menu-price">$11</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Tuatara range</strong>
+                  <span class="menu-price">$11</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Panhead range</strong>
+                  <span class="menu-price">$10</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Coopers Ale</strong>
+                  <span class="menu-price">$10</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Heineken</strong>
+                  <span class="menu-price">$11</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Moa cider</strong>
+                  <span class="menu-price">$10</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Crooked cider</strong>
+                  <span class="menu-price">$10</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/beer.jpg" alt="Garage project range" >
+              <figcaption class="menu-image-description">
+                Garage Project Range
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- Beer and Cidar section end-->
+
+        <!-- non-alcoholic section-->
+        <section
+          class="flexible-row border"
+          aria-labelledby="non-alcoholic-section"
+        >
+          <!-- Text content -->
+          <div class="flexible-row-box-text">
+            <h4 id="non-alcoholic-section">Non Alcoholic</h4>
+            <ul class="menu-list" aria-label="List of Non Alcoholic">
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Mineral Water</strong>
+                  <span class="menu-price">$4</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Soft Drinks</strong>
+                  <span class="menu-price">$4</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Juice</strong>
+                  <span class="menu-price">$4</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Coffee</strong>
+                  <span class="menu-price">$4.50</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title-price">
+                  <strong class="menu-title">Tea</strong>
+                  <span class="menu-price">$3.50</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Start -->
+
+          <div class="flexible-row-box-img">
+            <figure>
+              <img src="images/water.jpg" alt="Mineral Water" >
+              <figcaption class="menu-image-description">
+                Mineral Water
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Image End -->
+        </section>
+        <!-- non-alcoholic section end-->
+      </section>
+    </main>
+    <!-- Main Section End-->
+
+    <!-- 
+    Footer of the page, includes the restaurant's address, 
+    contact information, and copyright notice.
+    -->
+    <footer>
+      <!-- Haukai Restaurant's address -->
+      <address>
+        <!-- Address Details -->
+        Address:
+        <p>Haukai Restaurant</p>
+        <p>1 Island Street</p>
+        <p>Kerikeri</p>
+        <p>Bay of Islands</p>
+
+        <!-- Phone Number with link for dailing-->
+        <p>
+          Phone:
+          <a href="tel:+64094014019"> 09 401 4019</a>
+        </p>
+      </address>
+
+      <!-- Copyright Notice Information -->
+      <p>&copy; 2024 Haukai Restaurant</p>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Link to the JavaScript file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
